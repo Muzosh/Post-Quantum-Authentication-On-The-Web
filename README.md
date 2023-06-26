@@ -9,8 +9,7 @@ This project is a proof-of-concept for an article (link added later). It provide
 
 
 ## Repositories overview
-![image](https://github.com/Muzosh/Post-Quantum-Authentication-on-the-Web/assets/30979983/ab4f0206-3dec-44e9-8c4f-dbfa3c736a1c)
-
+![image](https://github.com/Muzosh/Post-Quantum-Authentication-on-the-Web/assets/30979983/9c421367-163f-4b8d-a021-f9a6ded5cf85)
 > Note: some repository names are not equal to separate repositories, but only refer to a specific branch in base repository. This is done to enable future pull requests. Just follow the links below to go to the specific changes.
 
 Following list is sorted by the lowest dependency (meaning that first listed project do not require any dependencies to other listed projects; bottom ones are dependent on top ones):
