@@ -7,8 +7,7 @@ This project is a proof-of-concept for an article (link added later). It provide
 ## General infrastructure overview
 ![image](https://github.com/Muzosh/Post-Quantum-Authentication-on-the-Web/assets/30979983/bd86e6b9-29b3-4146-8d96-3fd7efcb6e1c)
 
-
-## Repositories overview
+### Repositories overview
 ![image](https://github.com/Muzosh/Post-Quantum-Authentication-on-the-Web/assets/30979983/9c421367-163f-4b8d-a021-f9a6ded5cf85)
 > Note: some repository names are not equal to separate repositories, but only refer to a specific branch in base repository. This is done to enable future pull requests. Just follow the links below to go to the specific changes.
 
@@ -33,7 +32,7 @@ Following list is sorted by the lowest dependency (meaning that first listed pro
 * [`InfinitEIDPQ`](https://github.com/Muzosh/InfinitEIDPQ) - contains full-fledged applet for ESP32 firmware that enables post-quantum authentication on the web using embedded devices, and administration application for device management
   * requires: `Muzosh/liboqs-python`
 
-## User's point of view
+### User's point of view
 First, user attempts to log into a web service (Nextcloud cloud storage in this case):
 
 ![image](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/f4b5bb48-2dec-4d2a-aabe-65fda5bdc089)
@@ -61,3 +60,17 @@ After device connection and USB interface initialization, user is asked to inser
 On succesfull PIN authorization, user is authenticated using Dilithium5 private key stored on the embedded device and is logged in:
 
 ![SCR-20230627-jwjo](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/29156b0a-6a48-40d6-9986-8fe59116c35d)
+
+### Administrator's point of view
+TODO
+
+## Measurements
+TODO
+
+Overall, authenticating with Dilithium5 on ESP32-S3 is quite fast. Usually, the delay introduced by additional clicks and PIN insertion is more noticeable to the user, than the actual cryptographic operation.
+
+<img width="854" alt="PQC measurements-image-20230613172443470" src="https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/475d47a3-161b-4f56-8e28-085622054d4e">
+
+<img width="1101" alt="PQC measurements-image-20230614122801535" src="https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/71317a34-2a47-4079-9f52-f56f148b2309">
+
+You can check more measurements in `measurements` folder.
