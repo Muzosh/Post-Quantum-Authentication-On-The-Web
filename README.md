@@ -32,3 +32,32 @@ Following list is sorted by the lowest dependency (meaning that first listed pro
   * requires: `PQC-libelectronic-id` (via git submodules)
 * [`InfinitEIDPQ`](https://github.com/Muzosh/InfinitEIDPQ) - contains full-fledged applet for ESP32 firmware that enables post-quantum authentication on the web using embedded devices, and administration application for device management
   * requires: `Muzosh/liboqs-python`
+
+## User's point of view
+First, user attempts to log into a web service (Nextcloud cloud storage in this case):
+
+![image](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/f4b5bb48-2dec-4d2a-aabe-65fda5bdc089)
+
+He is redirected to the two-factor selection page. Since at this moment he has only one two-factor provider active (Web-eID), he is redirected to that page:
+
+![SCR-20230627-jwcn](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/bc07a49d-f098-4415-b554-8dcdee05d5d1)
+
+By clicking on the button, he invokes the Web-eID authentication protocol:
+
+![SCR-20230627-jwew](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/4cbedbc1-3242-4465-b25d-65834e3b6906)
+
+**At this point, he could use regular smart card reader and some supported smart card (e.g. Estonian eID card). But he plugs in our new embedded device to the USB**:
+
+![IMG_3431](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/8d0ce631-b457-46d4-b0dd-3e65ccb2686f)
+![IMG_3429](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/ee6595d2-d73d-4497-af83-3843212efd8e)
+
+
+(the LCD display is off at this moment as it is not crucial for the authentication)
+
+After device connection and USB interface initialization, user is asked to insert the authentication PIN:
+
+![SCR-20230627-jwgy](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/eea47f50-d92a-489e-a19d-9e141739cbb0)
+
+On succesfull PIN authorization, user is authenticated using Dilithium5 private key stored on the embedded device and is logged in:
+
+![SCR-20230627-jwjo](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/29156b0a-6a48-40d6-9986-8fe59116c35d)
