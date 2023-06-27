@@ -20,7 +20,7 @@ Following list is sorted by the lowest dependency (meaning that first listed pro
 * [`PQC-libpcsc-cpp`](https://github.com/Muzosh/libpcsc-cpp/tree/feature-adapt-serial-abstraction-layer) - adaptation of existing library to the new abstraction layer in the Web-eID app
 * [`PQC-phpseclib`](https://github.com/Muzosh/phpseclib/tree/feature-post-quantum-support) - Introduces post-quantum support with Dilithium5 as functional reference
   * requires: either `liboqs-php`, `OQS-openssl-in-PHP`, or `both` (via installation on the same system)
-* [`PQC-web-eid-authtoken-validation-php`](https://github.com/Muzosh/web-eid-authtoken-validation-php-fork-of-official-repo/tree/feature-post-quantum-support) - PQ extension of the official [Web-eID repository](https://github.com/web-eid) for PHP back-end servers
+* [`PQC-web-eid-authtoken-validation-php`](https://github.com/Muzosh/web-eid-authtoken-validation-php/tree/feature-post-quantum-support) - PQ extension of the official [Web-eID repository](https://github.com/web-eid) for PHP back-end servers
   * requires: `PQC-phpseclib` (via composer.json - vcs dependency)
 * [`PQC-twofactor-webeid`](https://github.com/Muzosh/nextcloud_twofactor_webeid) - an installable application to Nextcloud cloud storage server enabling the usage of PQC Web-eID for authenticating users into the web interface (can serve as an implementation example).
   * requires `PQC-web-eid-authtoken-validation-php` (via composer.json - vcs dependency)
