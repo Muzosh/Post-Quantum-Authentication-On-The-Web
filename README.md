@@ -24,7 +24,7 @@ Following list is sorted by the lowest dependency (meaning that first listed pro
   * requires: `PQC-phpseclib` (via composer.json - vcs dependency)
 * [`PQC-twofactor-webeid`](https://github.com/Muzosh/nextcloud_twofactor_webeid) - an installable application to Nextcloud cloud storage server enabling the usage of PQC Web-eID for authenticating users into the web interface (can serve as an implementation example).
   * requires `PQC-web-eid-authtoken-validation-php` (via composer.json - vcs dependency)
-* `PQC-nextcloud-docker` - development instance of PQC-ed Nextcloud server using Docker.
+* [`PQC-nextcloud-docker`](https://github.com/Muzosh/PQC-nextcloud-docker) - development instance of PQC-ed Nextcloud server using Docker.
   * requires: `PQC-twofactor-webeid` (via git submodule)
 * [`PQC-libelectronic-id`](https://github.com/Muzosh/libelectronic-id/tree/feature-abstraction-layer-and-InfinitEIDPQ) - introduces abstraction layer to introduce USB serial devices on top of smart cards and adds interface implementation for InfinitEIDPQ embedded device
   * requires: `PQC-libserial-cpp` and `PQC-libpcsc-cpp` (via git submodules)
