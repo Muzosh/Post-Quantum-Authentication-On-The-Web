@@ -32,6 +32,13 @@ Following list is sorted by the lowest dependency (meaning that first listed pro
 * [`InfinitEIDPQ`](https://github.com/Muzosh/InfinitEIDPQ) - contains full-fledged applet for ESP32 firmware that enables post-quantum authentication on the web using embedded devices, and administration application for device management
   * requires: `Muzosh/liboqs-python`
 
+## Usage
+1. TODO init device (requires ESP32 device, tested on LilyGO T-Display S3)
+2. TODO build and install PQ version of Web-eID
+3. Follow instructions in [`PQC-nextcloud-docker`](https://github.com/Muzosh/PQC-nextcloud-docker) to start the server
+4. Log in as `testuser` (password is `testuser`) and authenticate using the PQC embedded device
+
+## Gallery
 ### User's point of view
 First, user attempts to log into a web service (Nextcloud cloud storage in this case):
 
