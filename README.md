@@ -2,7 +2,7 @@
 This is a top-level/index repository for implementing ESP32-embedded-device-enabled post-quantum authentication in the web application and web services.
 
 ## Introduction
-This project is a proof-of-concept for an article (link added later). It provides reference implementation of post-quantum algorithms in an existing [authentication framework](https://github.com/Muzosh/Smart-Card-Authentication-On-The-Web), where instead of using smart-cards as user devices, an ESP32 embedded device is used.
+This project is a proof-of-concept for an article (link added later). It provides reference implementation of post-quantum algorithms in an existing [authentication framework](https://github.com/Muzosh/Smart-Card-Authentication-On-The-Web), where instead of using smart-cards as user devices, an ESP32 embedded device is used. Current implementation utilizes Dilithium5 digital signatures to create an authenticated entity.
 
 ## General infrastructure overview
 ![image](https://github.com/Muzosh/Post-Quantum-Authentication-on-the-Web/assets/30979983/bd86e6b9-29b3-4146-8d96-3fd7efcb6e1c)
@@ -64,7 +64,7 @@ After device connection and USB interface initialization, user is asked to inser
 
 ![SCR-20230627-jwgy](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/eea47f50-d92a-489e-a19d-9e141739cbb0)
 
-On succesfull PIN authorization, user is authenticated using Dilithium5 private key stored on the embedded device and is logged in:
+On succesfull PIN authorization, **user is authenticated using Dilithium5 private key stored on the embedded device** and is logged in:
 
 ![SCR-20230627-jwjo](https://github.com/Muzosh/Post-Quantum-Authentication-On-The-Web/assets/30979983/29156b0a-6a48-40d6-9986-8fe59116c35d)
 
